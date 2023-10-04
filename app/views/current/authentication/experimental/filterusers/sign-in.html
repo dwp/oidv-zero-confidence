@@ -1,0 +1,35 @@
+{% extends "layouts/_base.html" %}
+{% set phaseBanner = 'true' %}
+{% set languageToggle = 'true' %}
+
+{% block pageTitle %}
+    Enter your email address - GOV.UK 
+{% endblock %}
+
+
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <form action="enter-password-sign-in" method="post">
+    
+                {{ govukInput({
+                    label: {
+                    text: "Enter your email address to sign in",
+                    classes: "govuk-label--l",
+                    isPageHeading: true
+        
+                    },
+                    id: "register-email-address",
+                    name: "register-email-address",
+                    type: "email"
+                }) }}
+                
+                {{ govukButton({
+                    text: "Continue"
+                }) }}
+
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+  Errors, content pages and notifications
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <a href="javascript:history.go(-1)" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-l">
+      <span class="govuk-caption-l">Dynamic Trust Hub</span>
+      Errors, content pages and notifications
+    </h1>
+  </div>
+</div>
+
+<div class="flex-layout flex-layout--rev">
+  <div class="flex-layout__sidebar">
+    <aside class="app-related-items" role="complementary" style="float-right">
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Contents
+        </h2>
+        <ul class="govuk-list govuk-list--bullet govuk-!-font-size-16">
+          <li>
+            <a class="govuk-link" href="#errors">
+              Error messages
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#content">
+              Content pages
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#emails">
+              Notification emails
+            </a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#sms">
+              Notification text messages
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
+  <div class="flex-layout__main">
+    <h2 class="govuk-heading-s" id="errors">Error messages</h2>
+    <ul class="govuk-list govuk-list--bullet">
+        <li><a href="#">Example</a></li>
+
+    </ul>
+
+    <h2 class="govuk-heading-s" id="content">Content pages</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="#">Example</a></li>
+
+    </ul>
+
+    <h2 class="govuk-heading-s" id="emails">Notification emails</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./current/notifications/registration-successful.html">Registration successful</a></li>
+      <li><a href="./current/notifications/security-code-email.html">Email security code</a></li>
+      
+    </ul>
+
+    <h2 class="govuk-heading-s" id="sms">Notification text messages</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="./current/notifications/security-code-sms.html">Security code</a></li>
+      <li><a href="./current/notifications/security-code-register-sms.html">Security code Register</a></li>
+      <li><a href="./current/notifications/security-code-sign-in-sms.html">Security code Sign in</a></li>
+       
+    </ul>
+  </div>
+</div>
+{% endblock %}

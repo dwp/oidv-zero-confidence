@@ -1,0 +1,62 @@
+{% extends "layouts/layout.html" %}
+{% set phaseBanner = 'false' %}
+
+{% set pageHeading = 'Changelog' %}
+
+{% block pageTitle %}
+  {{pageHeading}}
+{% endblock %}
+
+{% block serviceName %}
+  {% endblock %}
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p><a href="/index">Back to home page</a></p>
+    <h1 class="govuk-heading-l">
+      <span class="govuk-caption-l">Dynamic Trust Hub prototype</span>
+      Zero confidence changelog
+    </h1>
+    <h2 class="govuk-heading-m">
+      August 2023
+    </h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Added filter concept in order to help existing and returning users with registration and authentication.</li>  
+    </ul>
+    <h2 class="govuk-heading-m">
+      July 2023
+    </h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Added password show/hide toggle</li>  
+    </ul>
+
+    <h2 class="govuk-heading-m">
+      May 2023
+    </h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Added medium uplift journey</li>
+      <li>Added reset password feature</li>
+      <li>Added account recovery feature</li>
+      
+    </ul>
+
+    <h2 class="govuk-heading-m">
+      April 2023
+    </h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Added errors, content and notifications pages</li>
+      <li>Created initial prototype</li>
+     
+    </ul>
+
+   
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "layouts/_base.html" %}
+{% set phaseBanner = 'true' %}
+{% set languageToggle = 'true' %}
+
+{% set title =  "Register" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">{{title}}</h1>
+
+        <p class="govuk-body">
+            Create an account so you can sign in securely each time you visit.
+        </p>
+
+        <div class="govuk-inset-text">
+            <a class="govuk-link" href="sign-in">
+                Sign in if you have already created an account
+            </a>
+        </div>
+
+        <h2 class="govuk-heading-m">
+            Before you start
+        </h2>
+
+        <p class="govuk-body">
+            You will need:
+        </p>
+
+        <ul class="govuk-list govuk-list--bullet">
+            <li>an email address</li>
+            <li>a mobile phone</li>
+            
+        </ul>
+
+        <p class="govuk-body">
+            We will send security codes to your email and phone to check they belong to you.
+        </p>
+
+      
+
+        
+        
+        {{ govukButton({
+            text: "Continue",
+            href: "email-address"
+        }) }}
+
+        <p class="govuk-body">
+            <a class="govuk-link" href="">I do not have this information</a>
+        </p>
+
+    </div>
+</div>
+{% endblock %}

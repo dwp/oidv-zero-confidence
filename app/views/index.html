@@ -1,0 +1,93 @@
+{% extends "layouts/layout.html" %}
+{% set phaseBanner = 'true' %}
+
+{% set pageHeading = 'OIDV prototype home' %}
+
+{% block pageTitle %}
+  {{pageHeading}}
+{% endblock %}
+
+{% block serviceName %}
+  {% endblock %}
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l">
+      <span class="govuk-caption-l">Dynamic Trust Hub prototype</span>
+      Zero confidence
+    </h1>
+
+    
+
+
+ <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+      Registration and sign in journey
+    </h2>
+    <p class="govuk-body">
+        <a class="govuk-link" href="./current/authentication/sign-in.html">
+          Start registration and sign in journey
+        </a>
+    </p>
+      <p class="govuk-body">
+The user registers or signs in using existing credentials.
+      </p>
+  
+ <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+ <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+     Medium uplift journey
+    </h2>
+    <p class="govuk-body">
+        <a class="govuk-link" href="https://prototype-dth.herokuapp.com/auth/dev-ready/register/collecting-your-personal-details">
+          Start medium uplift journey
+        </a>
+    </p>
+      <p class="govuk-body">
+Once registered and signed in, the user can verify their identity by going through the medium uplift journey. 
+      </p>
+  
+<!--
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    
+    <h3 class="govuk-heading-s govuk-!-margin-bottom-1">
+      Codes for authentication steps
+    </h3>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Register email authentication: <strong>283194</strong></li>
+      <li>Register mobile authentication: <strong>969862</strong></li>
+      <li>Sign in mobile authentication: <strong>471350</strong></li>
+      <li>Reset password email authentication: <strong>373868</strong></li>
+      <li>Reset password mobile authentication: <strong>221645</strong></li>
+      <li>Account recovery mobile authentication: <strong>969862</strong></li>
+      <li>Account recovery (register new email journey) email authentication: <strong>283194</strong></li>
+      <li>Account recovery (cannot access mobile number journey) email authentication: <strong>919291</strong></li>
+    </ul>
+   -->
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class="govuk-heading-m">Service breakdown</h2>
+    <p>
+       <a class="govuk-link" href="errors-notifications">Errors, content pages and notifications</a>
+    </p>
+ 
+
+
+
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    {{ govukTag({
+      text: "experimental"
+    }) }}
+    <h2 class="govuk-heading-m">Improvements</h2>
+    <p>
+      <a href="./current/authentication/experimental/index">View all the experimental journeys and pages</a>
+    </p>
+ 
+  </div>
+</div>
+
+{% endblock %}
